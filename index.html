@@ -6,8 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather 2.0</title>
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!-- Box Icons Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
-    <body>
-        <h1 class="text-red-900">Yo</h1>
+    <body class="font-Raleway flex items-center flex-col h-screen bg-blue-300">
+        <h1 class="text-center font-bold text-2xl mt-5 mb-4 text-white"> Weather App 2.0</h1>
+        <main class="h-full w-4/5 bg-neutral-200 flex flex-col items-center rounded-xl pt-5 overflow-hidden">
+            <section class="flex items-center justify-between bg-white w-64 border rounded-full px-4 py-2 mb-5">
+                <input class="w-fit outline-none bg-transparent border-none" type="text" placeholder="Enter City or State" required>
+                <i class="bx bx-search"></i>
+            </section>
+            <section class="w-full px-4">
+                <h1 id="city-name" class="text-3xl text-start">City Name</h1>
+            </section>
+            <!-- Logic Weather Type -->
+            <section id="weather-icon" class="w-full h-1/4 bg-blue-700 relative">
+                <div id="sunny" class="close">
+                    <i class='bx bxs-sun text-8xl text-yellow-400 absolute top-4 left-3'></i>
+                    <i class='bx bx-cloud text-9xl text-white absolute left-20 top-9'></i>
+                    <i class='bx bx-cloud text-9xl text-white absolute left-40 top-9'></i>
+                </div>
+                <div id="rainy" class="close">
+                    <i class='bx bxs-droplet text-7xl text-blue-600 absolute top-5 left-3'></i>
+                    <i class='bx bxs-droplet text-7xl text-blue-600 absolute top-14 left-40'></i>
+                    <i class='bx bxs-droplet text-7xl text-blue-600 absolute top-14 left-16'></i>
+                    <i class='bx bxs-droplet text-7xl text-blue-600 absolute top-4 left-28'></i>
+                    <i class='bx bxs-droplet text-7xl text-blue-600 absolute top-4 left-56'></i>
+                </div>
+                <div id="cloudy" class="flex justify-around items-center h-full text-5xl text-gray-500 close">
+                    <i class='bx bx-cloud'></i>
+                    <i class='bx bx-cloud'></i>
+                    <i class='bx bx-cloud'></i>
+                    <i class='bx bx-cloud'></i>
+                </div>
+            </section>
+            <section id="api-data" class="w-full h-screen bg-slate-500 grid grid-cols-2">
+                <div id="temperature" class="p-2">
+                    <h1>Temp.</h1>
+                    <!-- Icon faggot ass nigga -->
+                    <div></div>
+                </div>
+                <div>hi</div>
+                <div>hi</div>
+                <div>hi</div>
+                <div>hi</div>
+                <div>hi</div>
+            </section>
+        </main>
+
+
+
+
+        <script src="script.js"></script>
     </body>
 </html>
